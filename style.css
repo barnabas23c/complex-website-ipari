@@ -1,5 +1,41 @@
 
-* {
+*
+{
     margin: 0; padding: 0;
     box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #f74843;
+    padding: 0;
+}
+
+.navbar > div {
+    padding-left: 0;
+}
+
+#carousel {
+    background-color: #f74843aa;
+}
+
+#carousel,
+.carousel-item,
+.carousel-item > img
+{
+    height: 40vh;
+    object-fit: cover;
+}
+
+#valve_logo{
+    background-color: white;
+}
+
+main {
+    padding: 32px;
+}
+
+.revealer {
+    width: 100%;
+    background-color: red;
+    padding: 8px;
 }

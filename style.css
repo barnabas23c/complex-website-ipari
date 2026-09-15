@@ -37,5 +37,36 @@ main {
 .revealer {
     width: 100%;
     background-color: red;
-    padding: 8px;
+    padding: 12px 16px;
+    border-radius: 24px 24px 0 0;
+}
+
+.collapse_custom {
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 16px;
+    justify-content: center;
+}
+
+main > .revealer:not(:first-child) {
+    margin-top: 16px;
+}
+
+.card-img-top {
+    padding: 16px;
+    height: 200px;
+    object-fit: contain;
+}
+
+#revealer3 img {
+    transition: transform 0.3s ease;
+    height: 16px;
+}
+
+#revealer3[aria-expanded="true"] img {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
 }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Form</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./kapcsolat/style.css">
+    <script defer src="./kapcsolat/index.js"></script>
+</head>
+<body>
+    <h1>Kapcsolat</h1>
+    <form method="get" action="./bekuldott">
+        <label for="nev">Név</label><br>
+        <input type="text" name="nev" id="nev" placeholder="Nagy János"><br>
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email" placeholder="nagy.janos.420@freemail.com"><br>
+        <label for="telefonszam">Telefonszám</label><br>
+        <input type="tel" name="telefonszam" id="telefonszam" placeholder="+36 30 123 4567"><br>
+        <label for="opcio">Mivel kapcsolatban?</label><br>
+        <select name="opcio" id="opcio">
+            <option value="munka">Munka</option>
+            <option value="problema">Probléma bejelentés</option>
+            <option value="egyeb">Egyéb</option>
+        </select><br>
+        <label for="uzenet">Üzenet</label><br>
+        <textarea name="uzenet" id="uzenet" placeholder="Írj egy üzenetet..."></textarea><br>
+        <div class="center">
+            <button type="submit">Küldés</button>
+        </div>
+    </form>
+</body>
+</html>

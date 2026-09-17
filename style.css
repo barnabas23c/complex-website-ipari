@@ -48,7 +48,7 @@ main {
 .revealer {
     display: flex;
     width: 100%;
-    background-color: red;
+    border: 1px solid grey;
     padding: 12px 16px;
     border-radius: 24px;
     transition: border-radius .1s;
@@ -59,10 +59,15 @@ main {
     transition-delay: .3s;
 }
 
+.revealer[aria-expanded="true"] {
+    border-bottom: none;
+}
+
 .collapse_custom {
     display: flex;
     flex-direction: row;
-    background-color: red;
+    border: 1px solid grey;
+    border-top: none;
     gap: 16px;
     flex-wrap: wrap;
     padding: 16px;

@@ -1,0 +1,18 @@
+
+main {
+    padding: 12px;
+}
+
+h1 {
+    margin-bottom: 12px;
+}
+
+P {
+    text-wrap: nowrap;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: min-content min-content;
+    gap: 0 12px;
+}

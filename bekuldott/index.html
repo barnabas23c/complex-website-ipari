@@ -4,8 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valve - Beküldött kérés</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./bekuldott/style.css">
+    <script src="./bekuldott/index.js" defer></script>
 </head>
 <body>
-    
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./media/logo.png" alt="Valve logó" height="50" id="valve_logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a href="#szolgaltatasok" class="nav-link" title="Ugrás a szolgáltatások szekcióra">Szolgáltatások</a>
+                    <a href="#jatekok" class="nav-link" title="Ugrás a játékok szekcióra">Játékok</a>
+                    <a href="#velemenyek" class="nav-link" title="Ugrás a vélemények szekcióra">Vélemények</a>
+                    <a href="/kapcsolat" class="nav-link contact" target="_blank" title="Ugrás a kapcsolat lapra"><u>Kapcsolat</u></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <h1>Beküldött információ:</h1>
+        <div id="grid">
+            <p>Név:</p>
+            <p class="data" id="nev"></p>
+            <p>Email:</p>
+            <p class="data" id="email"></p>
+            <p>Telefonszám:</p>
+            <p class="data" id="telefonszam"></p>
+            <p>Kapcsolat témája:</p>
+            <p class="data" id="opcio"></p>
+            <p>Üzenet:</p>
+            <p class="data" id="uzenet"></p>
+        </div>
+    </main>
 </body>
 </html>

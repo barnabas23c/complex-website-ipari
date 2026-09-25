@@ -26,7 +26,7 @@
 }
 
 #carousel {
-    background-color: #f74843aa;
+    background: linear-gradient(to bottom right, #107eb2, #404040);
 }
 
 #carousel,
@@ -126,6 +126,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 footer > p {
@@ -134,4 +135,46 @@ footer > p {
 
 .hidden_link {
     color: #212529;
+}
+
+.stars {
+    text-shadow: 0 0 1px black;
+}
+
+.rating {
+    font-size: 1.8em;
+    color: gold;
+}
+
+.velemenyekgrid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 18px;
+}
+
+.review_flexbox {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 16px;
+    justify-content: space-between;
+}
+
+.review_text {
+    font-size: 1.4em;
+    margin-bottom: 0;
+}
+
+.review_author {
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: gray;
+}
+
+@media only screen and (max-width: 700px) {
+    .velemenyekgrid {
+        grid-template-columns: auto;
+    }
 }

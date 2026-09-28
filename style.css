@@ -186,7 +186,7 @@ footer > p {
 .carousel-leftside {
     display: flex;
     width: 50%;
-    background-color: blue;
+    background: linear-gradient(to right, blue 80%, transparent);
     height: 100%;
     flex-direction: column;
     justify-content: center;

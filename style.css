@@ -186,11 +186,12 @@ footer > p {
 .carousel-leftside {
     display: flex;
     width: 50%;
-    background: linear-gradient(to right, blue 80%, transparent);
+    background: linear-gradient(to right, lightblue 80%, transparent); /*it was hurting my eye changed it to lightblue*/
     height: 100%;
     flex-direction: column;
     justify-content: center;
     padding: 16px;
+    text-shadow: 0 4px 4px #000000aa; /*WIP*/
 }
 
 .carousel-container h1,
@@ -207,3 +208,7 @@ footer > p {
     height: 100%;
 }
 
+.carousel-indicators button {
+    border: 0.1px solid lightgray !important;
+    box-shadow: 0 0 5px 1px gray;
+}

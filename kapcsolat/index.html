@@ -33,7 +33,7 @@
     </nav>
 
     <main>
-        <form method="get" action="/bekuldott/">
+        <form id="form" method="get" action="/bekuldott/">
             <h1>Kapcsolat</h1>
             <label for="nev">Név</label><br>
             <input type="text" name="nev" id="nev" placeholder="Nagy János" required><br>
@@ -49,8 +49,9 @@
             </select><br>
             <label for="uzenet">Üzenet</label><br>
             <textarea name="uzenet" id="uzenet" placeholder="Írj egy üzenetet..." required></textarea><br>
+            <p id="hiba" style="display: none;"></p>
             <div class="center">
-                <button type="submit">Küldés</button>
+                <button id="submit" type="button">Küldés</button>
             </div>
         </form>
     </main>

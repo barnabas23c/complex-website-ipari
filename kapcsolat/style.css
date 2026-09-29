@@ -1,7 +1,7 @@
 
 html, body { height: 100%; }
 
-body {
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,8 +11,10 @@ body {
 
 form {
     width: min(600px, 80%);
-    border: 1px solid red;
+    border: 2px solid lightgray;
+    box-shadow: 0 0 32px 10px #00000020;
     padding: 32px;
+    border-radius: 16px;
 }
 
 h1 {
@@ -26,7 +28,7 @@ form input, form select, form textarea {
     margin-top: 4px;
     padding: 8px;
     border-radius: 8px;
-    border: 2px solid #f74843;
+    border: 2px solid lightgray;
     width: 100%;
 }
 
@@ -43,17 +45,28 @@ form label {
 }
 
 form button {
-    padding: 8px 0px;
-    border-radius: 8px;
-    border: 2px solid #f74843;
+    padding: 12px 4px;
+    border-radius: 12px;
+    background-color: #f74843;
+    border: 2px solid #a33a36;
     width: 160px;
+    transition: background-color .15s;
+    color: white;
+}
+
+form button:hover {
+    background-color: #fc8682;
+}
+
+form button:active {
+    background-color: #a33a36;
 }
 
 form input:focus,
 form select:focus,
 form textarea:focus,
 form button:focus {
-    border: 2px solid green;
+    border: 2px solid #f74843;
     outline: none;
 }
 

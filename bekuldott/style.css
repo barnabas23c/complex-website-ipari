@@ -14,5 +14,22 @@ P {
 #grid {
     display: grid;
     grid-template-columns: min-content min-content;
-    gap: 0 12px;
 }
+
+#grid p {
+    padding: 6px 12px;
+    margin-bottom: 0;
+}
+
+#grid p {
+    border: 1px solid black;
+}
+
+#grid p:nth-child(2n-1) {
+    border-right: none;
+}
+
+#grid p:not(:nth-last-child(-n + 2)) {
+    border-bottom: none;
+}
+

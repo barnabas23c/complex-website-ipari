@@ -181,17 +181,16 @@ footer > p {
     align-self: center;
     height: 100%;
     align-items: center;
+    background: linear-gradient(to right, lightblue 50%, transparent 70%);
 }
 
 .carousel-leftside {
     display: flex;
     width: 50%;
-    background: linear-gradient(to right, lightblue 80%, transparent); /*it was hurting my eye changed it to lightblue*/
     height: 100%;
     flex-direction: column;
     justify-content: center;
     padding: 16px;
-    text-shadow: 0 4px 4px #000000aa; /*WIP*/
 }
 
 .carousel-container h1,

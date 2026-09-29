@@ -39,6 +39,11 @@
 
 main {
     padding: 32px;
+    background-color: #FFEFEF;
+}
+
+.card {
+    background-color: #F5DFDF;
 }
 
 .revealer {
@@ -181,7 +186,7 @@ footer > p {
     align-self: center;
     height: 100%;
     align-items: center;
-    background: linear-gradient(to right, lightblue 40%, transparent 60%);
+    background: linear-gradient(to right, #202020 40%, transparent 60%);
 }
 
 .carousel-leftside {
@@ -198,6 +203,7 @@ footer > p {
     overflow-wrap: break-word;
     text-align: center;
     width: 100%;
+    color: #DDDDDD;
 }
 
 .carousel-container img {
@@ -206,6 +212,7 @@ footer > p {
     height: 100%;
     scale: 200%;
     z-index: -1;
+    object-fit: cover;
 }
 
 .carousel-indicators button {

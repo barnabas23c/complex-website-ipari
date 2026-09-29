@@ -211,3 +211,10 @@ footer > p {
     border: 0.1px solid lightgray !important;
     box-shadow: 0 0 5px 1px gray;
 }
+
+#carousel-img-games {
+    scale: 200%;
+    z-index: -1;
+    object-fit: cover;
+}
+

@@ -218,3 +218,6 @@ footer > p {
     object-fit: cover;
 }
 
+.velemenyekgrid .card {
+    min-width: 33%;
+}

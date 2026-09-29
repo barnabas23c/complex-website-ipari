@@ -181,12 +181,12 @@ footer > p {
     align-self: center;
     height: 100%;
     align-items: center;
-    background: linear-gradient(to right, lightblue 50%, transparent 70%);
+    background: linear-gradient(to right, lightblue 40%, transparent 60%);
 }
 
 .carousel-leftside {
     display: flex;
-    width: 50%;
+    width: 40%;
     height: 100%;
     flex-direction: column;
     justify-content: center;
@@ -201,21 +201,16 @@ footer > p {
 }
 
 .carousel-container img {
-    width: 50%;
-    object-fit: contain;
+    width: 60%;
     padding: 16px;
     height: 100%;
+    scale: 200%;
+    z-index: -1;
 }
 
 .carousel-indicators button {
     border: 0.1px solid lightgray !important;
     box-shadow: 0 0 5px 1px gray;
-}
-
-#carousel-img-games {
-    scale: 200%;
-    z-index: -1;
-    object-fit: cover;
 }
 
 .velemenyekgrid .card {

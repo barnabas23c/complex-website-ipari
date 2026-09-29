@@ -9,16 +9,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./kapcsolat/style.css">
-    <script defer src="./kapcsolat/index.js"></script>
+    <script defer src="./index.js"></script>
 </head>
 <body>
     <!--Navbar-->
     <nav class="navbar navbar-expand-sm">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="./media/logo.png" alt="Valve logó" height="50" id="valve_logo">
+                <img src="/media/logo.png" alt="Valve logó" height="50" id="valve_logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +33,7 @@
     </nav>
 
     <main>
-        <form method="get" action="./bekuldott">
+        <form method="get" action="/bekuldott/">
             <h1>Kapcsolat</h1>
             <label for="nev">Név</label><br>
             <input type="text" name="nev" id="nev" placeholder="Nagy János" required><br>
